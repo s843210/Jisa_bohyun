@@ -818,7 +818,8 @@ img {
   background: #101f3d;
 }
 
-.film-visual > img {
+.film-visual > img,
+.film-visual > video {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -830,6 +831,7 @@ img {
   position: absolute;
   inset: 0;
   background: linear-gradient(90deg, rgba(7, 22, 51, 0.72), transparent 60%);
+  pointer-events: none;
 }
 
 .film-frame {
@@ -843,30 +845,12 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.62);
   font-family: var(--mono);
   font-size: 0.56rem;
+  pointer-events: none;
 }
 
 .film-frame span { color: #ff6d6d; }
 .film-frame b { grid-row: 2; align-self: center; font-size: 0.72rem; letter-spacing: 0.12em; }
 .film-frame i { grid-column: 2; grid-row: 3; font-style: normal; }
-
-.play-orb {
-  position: absolute;
-  z-index: 3;
-  left: 50%;
-  top: 50%;
-  width: 88px;
-  height: 88px;
-  transform: translate(-50%, -50%);
-  border: 1px solid rgba(255, 255, 255, 0.8);
-  border-radius: 50%;
-  background: rgba(7, 22, 51, 0.35);
-  color: var(--white);
-  cursor: pointer;
-  backdrop-filter: blur(12px);
-  transition: transform 250ms ease, background 250ms ease;
-}
-
-.play-orb:hover { transform: translate(-50%, -50%) scale(1.08); background: var(--blue); }
 
 .browser-visual {
   background: var(--paper);
