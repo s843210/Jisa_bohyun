@@ -391,21 +391,21 @@ img {
   position: relative;
   display: flex;
   align-items: center;
-  gap: 1.25rem;
+  gap: 1.75rem;
   width: fit-content;
   max-width: 100%;
-  margin: 0 0 1.15rem;
+  margin: -2.75rem 0 1.25rem;
 }
 
 .hero-university-lockup img {
-  width: clamp(124px, 9vw, 156px);
+  width: clamp(166px, 12vw, 210px);
   aspect-ratio: 1;
   object-fit: cover;
   flex: 0 0 auto;
 }
 
 .hero-university-lockup strong {
-  font-size: clamp(1.4rem, 2.15vw, 1.9rem);
+  font-size: clamp(2rem, 3vw, 2.8rem);
   line-height: 1.1;
   letter-spacing: -.04em;
   white-space: nowrap;
@@ -1475,9 +1475,9 @@ img {
   .hero h1 { font-size: clamp(3.7rem, 19vw, 6.2rem); line-height: .9; }
   .hero-body { margin: 2rem 0; }
   .hero-media { min-height: 520px; margin-top: 3rem; border-radius: 48% 48% 6px 6px / 23% 23% 6px 6px; }
-  .hero-university-lockup { width: min(100%, 360px); gap: 1rem; margin-bottom: 1rem; }
-  .hero-university-lockup img { width: 108px; }
-  .hero-university-lockup strong { font-size: 1.2rem; }
+  .hero-university-lockup { width: min(100%, 360px); gap: .9rem; margin: -1.3rem 0 1rem; }
+  .hero-university-lockup img { width: 124px; }
+  .hero-university-lockup strong { font-size: 1.35rem; }
   .hero-caption { grid-row: 3; }
   .scroll-mark { display: none; }
   .section-pad { padding: 5rem 1.2rem; }
