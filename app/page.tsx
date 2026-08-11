@@ -474,15 +474,11 @@ export default function Home() {
       <section className="hero" id="content">
         <div className="hero-grid" />
         <div className="hero-copy" data-reveal>
-          <p className="eyebrow"><span />{t.heroKicker}</p>
           <div className="hero-university-lockup">
             <img src="assets/chosun-university-logo.png" alt={lang === "ko" ? "조선대학교 로고" : "朝鮮大学校ロゴ"} />
-            <div>
-              <span>CHOSUN UNIVERSITY</span>
-              <strong>{lang === "ko" ? "컴퓨터공학과" : "コンピュータ工学科"}</strong>
-              <small>COMPUTER ENGINEERING</small>
-            </div>
+            <strong>{lang === "ko" ? "컴퓨터공학과" : "コンピュータ工学科"}</strong>
           </div>
+          <p className="eyebrow"><span />{t.heroKicker}</p>
           <div className="hero-person">
             <span>{t.profileRoman}</span>
             <strong>{t.profileName}</strong>
