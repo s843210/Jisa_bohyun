@@ -26,9 +26,6 @@ const copy = {
     explore: "프로젝트 보기",
     scroll: "SCROLL TO CONNECT",
     heroNote: "US MEDICAL INC. / TOKYO · 기업 현장실습생 임보현의 두 달간 작업 기록",
-    month: "개월",
-    works: "성과물",
-    scenes: "영상 테마",
     languages: "운영 언어",
     profileLabel: "00 / PROFILE & ROLE",
     profileTitle: "컴퓨터공학을 전공하고,\n현장에서 끝까지 연결했습니다.",
@@ -129,9 +126,6 @@ const copy = {
     explore: "プロジェクトを見る",
     scroll: "SCROLL TO CONNECT",
     heroNote: "US MEDICAL INC. / TOKYO · 企業現場実習生イム・ボヒョンの2か月の記録",
-    month: "か月",
-    works: "成果物",
-    scenes: "動画テーマ",
     languages: "運用言語",
     profileLabel: "00 / PROFILE & ROLE",
     profileTitle: "コンピュータ工学を学び、\n現場で最後までつなげました。",
@@ -487,13 +481,6 @@ export default function Home() {
         </div>
         <p className="hero-caption">{t.heroNote}</p>
         <div className="scroll-mark"><span>{t.scroll}</span><i /></div>
-      </section>
-
-      <section className="stat-strip" aria-label={lang === "ko" ? "프로젝트 수치" : "プロジェクト数値"}>
-        <div><b>02</b><span>{t.month}</span></div>
-        <div><b>08</b><span>{t.works}</span></div>
-        <div><b>05</b><span>{t.scenes}</span></div>
-        <div><b>03</b><span>{t.languages}</span></div>
       </section>
 
       <section className="profile-section section-pad" id="profile">
