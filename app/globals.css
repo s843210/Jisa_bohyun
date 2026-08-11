@@ -1232,18 +1232,18 @@ img {
 .outcome-intro h2 { font-size: clamp(3.6rem, 6vw, 7rem); }
 .outcome-intro > p:last-child { margin: 0; color: rgba(255,255,255,.6); line-height: 1.8; word-break: keep-all; }
 
-.outcome-numbers {
+.emotion-journey {
   display: grid;
-  grid-template-columns: .8fr .8fr 1fr 1.4fr 1fr;
+  grid-template-columns: repeat(5, 1fr);
   margin-top: 6rem;
   border-top: 1px solid rgba(255,255,255,.28);
   border-bottom: 1px solid rgba(255,255,255,.28);
 }
-.outcome-numbers > div { min-width: 0; padding: 1.4rem; border-right: 1px solid rgba(255,255,255,.18); }
-.outcome-numbers > div:last-child { border-right: 0; }
-.outcome-numbers span { color: var(--electric); font-family: var(--mono); font-size: .54rem; }
-.outcome-numbers b { display: block; overflow: hidden; margin: 2.5rem 0 2rem; font-family: var(--serif); font-size: clamp(2.6rem, 5vw, 6rem); font-style: italic; font-weight: 400; line-height: .85; text-overflow: ellipsis; }
-.outcome-numbers p { margin: 0; color: rgba(255,255,255,.52); font-size: .65rem; }
+.emotion-journey article { min-width: 0; padding: 1.6rem; border-right: 1px solid rgba(255,255,255,.18); }
+.emotion-journey article:last-child { border-right: 0; }
+.emotion-journey span { color: var(--electric); font-family: var(--mono); font-size: .54rem; }
+.emotion-journey b { display: block; margin: 2.5rem 0 1.5rem; font-family: var(--serif); font-size: clamp(2rem, 3vw, 3.5rem); font-weight: 400; line-height: .9; word-break: keep-all; }
+.emotion-journey p { margin: 0; color: rgba(255,255,255,.56); font-size: .68rem; line-height: 1.7; word-break: keep-all; }
 
 .problem-head {
   display: grid;
@@ -1402,6 +1402,8 @@ img {
 [data-lang="ja"] .package-intro > p:last-child,
 [data-lang="ja"] .outcome-intro h2,
 [data-lang="ja"] .outcome-intro > p:last-child,
+[data-lang="ja"] .emotion-journey b,
+[data-lang="ja"] .emotion-journey p,
 [data-lang="ja"] .problem-head h3,
 [data-lang="ja"] .problem-list h4,
 [data-lang="ja"] .problem-list p,
@@ -1446,8 +1448,10 @@ img {
   .case-panel { grid-template-columns: 1fr; }
   .case-story { display: grid; grid-template-columns: .45fr 1fr; gap: 2rem; }
   .case-story dl { grid-column: 1/-1; display: grid; grid-template-columns: repeat(3,1fr); gap: 1.5rem; margin-top: 1rem; }
-  .outcome-numbers { grid-template-columns: repeat(5, 1fr); }
-  .outcome-numbers b { font-size: clamp(2rem, 4vw, 4rem); }
+  .emotion-journey { grid-template-columns: repeat(2, 1fr); }
+  .emotion-journey article { border-bottom: 1px solid rgba(255,255,255,.18); }
+  .emotion-journey article:nth-child(2n) { border-right: 0; }
+  .emotion-journey article:last-child { grid-column: 1/-1; border-bottom: 0; }
   .reflection-grid { grid-template-columns: 1fr; }
   .reflection-photos { min-height: 700px; }
   .team-photo { width: 75%; }
@@ -1517,10 +1521,9 @@ img {
   .dieline-card { grid-template-columns: 1fr; }
   .dieline-card > img { min-height: 320px; }
   .dieline-card > div { border-left: 0; border-top: 1px solid var(--ink); }
-  .outcome-numbers { grid-template-columns: repeat(2,1fr); }
-  .outcome-numbers > div { border-bottom: 1px solid rgba(255,255,255,.18); }
-  .outcome-numbers > div:last-child { grid-column: 1/-1; }
-  .outcome-numbers b { font-size: 3.5rem; }
+  .emotion-journey { grid-template-columns: 1fr; }
+  .emotion-journey article { border-right: 0; }
+  .emotion-journey article:last-child { grid-column: auto; }
   .problem-head { grid-template-columns: 1fr; margin-top: 6rem; }
   .problem-list article { grid-template-columns: 35px 1fr; gap: .7rem; padding: 1.4rem 0; }
   .problem-list h4 { font-size: 1.1rem; }

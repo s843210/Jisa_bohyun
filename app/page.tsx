@@ -26,7 +26,6 @@ const copy = {
     explore: "프로젝트 보기",
     scroll: "SCROLL TO CONNECT",
     heroNote: "US MEDICAL INC. / TOKYO · 기업 현장실습생 임보현의 두 달간 작업 기록",
-    languages: "운영 언어",
     profileLabel: "00 / PROFILE & ROLE",
     profileTitle: "일본 인턴십에서,\n맡은 일에 끝까지 최선을 다했습니다.",
     profileBody:
@@ -74,13 +73,9 @@ const copy = {
     printReady: "PRINT-READY",
     printTitle: "화면에서 상자까지",
     printBody: "95 × 65 × 30 mm 전개도에 효능, 사용법, 성분, 주의사항을 면별로 배치해 실제 인쇄 데이터로 연결했습니다.",
-    outcomeLabel: "04 / OUTPUT ≠ OUTCOME",
-    outcomeTitle: "8개의 결과물보다\n중요했던 한 가지.",
-    outcomeBody: "만든 사람이 떠난 뒤에도 결과물이 계속 쓰이는가. 이 질문이 모든 판단의 기준이 되었습니다.",
-    deliverables: "DELIVERABLES",
-    ops: "운영 가능",
-    feedback: "주간 피드백 루프",
-    targets: "타깃 패키지 라인",
+    outcomeLabel: "04 / TWO MONTHS, FIVE EMOTIONS",
+    outcomeTitle: "긴장으로 시작해,\n작은 자신감을 얻었습니다.",
+    outcomeBody: "낯선 나라에서 일하고 생활한 두 달 동안 감정은 계속 바뀌었습니다. 두려움과 답답함, 가족과 친구를 향한 그리움을 지나 조금씩 적응했고, 마지막에는 어디서든 다시 시작할 수 있다는 자신감을 얻었습니다.",
     problemLabel: "THREE PROBLEMS I KEPT",
     problemTitle: "문제는 사라졌고,\n판단 기준은 남았습니다.",
     reflectionLabel: "05 / TWO MONTHS IN JAPAN",
@@ -126,7 +121,6 @@ const copy = {
     explore: "プロジェクトを見る",
     scroll: "SCROLL TO CONNECT",
     heroNote: "US MEDICAL INC. / TOKYO · 企業現場実習生イム・ボヒョンの2か月の記録",
-    languages: "運用言語",
     profileLabel: "00 / PROFILE & ROLE",
     profileTitle: "日本でのインターンシップで、\n任された仕事に最後まで全力で取り組みました。",
     profileBody:
@@ -174,13 +168,9 @@ const copy = {
     printReady: "PRINT-READY",
     printTitle: "画面から箱へ",
     printBody: "95 × 65 × 30 mmの展開図に効能、用法、成分、注意事項を面ごとに配置し、実際の印刷データにつなげました。",
-    outcomeLabel: "04 / OUTPUT ≠ OUTCOME",
-    outcomeTitle: "8つの成果物より\n大切だった一つのこと。",
-    outcomeBody: "制作者が離れた後も、成果物が使われ続けるか。この問いがすべての判断基準になりました。",
-    deliverables: "DELIVERABLES",
-    ops: "運用可能",
-    feedback: "週次フィードバック",
-    targets: "ターゲット別ライン",
+    outcomeLabel: "04 / TWO MONTHS, FIVE EMOTIONS",
+    outcomeTitle: "緊張から始まり、\n小さな自信を得ました。",
+    outcomeBody: "慣れない国で働き、暮らした2か月の間、感情は何度も変わりました。不安ともどかしさ、家族や友人への恋しさを越えて少しずつ適応し、最後にはどこでももう一度始められるという自信を得ました。",
     problemLabel: "THREE PROBLEMS I KEPT",
     problemTitle: "問題は消え、\n判断基準が残った。",
     reflectionLabel: "05 / TWO MONTHS IN JAPAN",
@@ -320,6 +310,34 @@ const responsibilities: Array<{
     title: { ko: "타깃별 제품 패키지", ja: "ターゲット別製品パッケージ" },
     body: { ko: "성인용과 어린이용 표현을 나누고 치수·효능·사용법·주의사항까지 인쇄 데이터로 연결했습니다.", ja: "大人向けと子ども向けの表現を分け、寸法・効能・用法・注意事項まで印刷データにつなげました。" },
     tool: "PACKAGE / PRINT",
+  },
+];
+
+const emotions: Array<{ no: string; title: Localized; body: Localized }> = [
+  {
+    no: "01",
+    title: { ko: "긴장", ja: "緊張" },
+    body: { ko: "첫 출근과 일본어 회의 앞에서 내가 여기서 무엇을 할 수 있을지 걱정했습니다.", ja: "初出勤と日本語での会議を前に、自分に何ができるのか不安でした。" },
+  },
+  {
+    no: "02",
+    title: { ko: "답답함", ja: "もどかしさ" },
+    body: { ko: "하고 싶은 말은 분명했지만 표현하지 못했고, 피드백을 잘못 이해한 날도 있었습니다.", ja: "伝えたいことはあっても言葉にできず、フィードバックを誤解した日もありました。" },
+  },
+  {
+    no: "03",
+    title: { ko: "그리움", ja: "恋しさ" },
+    body: { ko: "일이 풀리지 않는 날 혼자 방으로 돌아오면 한국의 가족과 친구들이 많이 생각났습니다.", ja: "仕事がうまくいかない日に一人で部屋へ戻ると、韓国の家族や友人が恋しくなりました。" },
+  },
+  {
+    no: "04",
+    title: { ko: "적응", ja: "適応" },
+    body: { ko: "모르면 다시 묻고, 생활 규칙을 하나씩 익히며 낯선 환경이 조금씩 일상이 되었습니다.", ja: "分からなければ聞き直し、生活のルールを一つずつ覚えるうちに、慣れない環境が日常になりました。" },
+  },
+  {
+    no: "05",
+    title: { ko: "자신감", ja: "自信" },
+    body: { ko: "맡은 일과 혼자 하는 생활을 끝까지 해내며 어디서든 살아갈 수 있다는 마음을 얻었습니다.", ja: "任された仕事と一人での生活を最後までやり遂げ、どこでも生きていけるという自信を得ました。" },
   },
 ];
 
@@ -601,12 +619,14 @@ export default function Home() {
           <h2>{t.outcomeTitle.split("\n").map((line) => <span key={line}>{line}</span>)}</h2>
           <p>{t.outcomeBody}</p>
         </div>
-        <div className="outcome-numbers" data-reveal>
-          <div><span>01</span><b>08</b><p>{t.deliverables}</p></div>
-          <div><span>02</span><b>03</b><p>{t.languages}</p></div>
-          <div><span>03</span><b>01</b><p>{t.ops}</p></div>
-          <div><span>04</span><b>WEEKLY</b><p>{t.feedback}</p></div>
-          <div><span>05</span><b>02</b><p>{t.targets}</p></div>
+        <div className="emotion-journey" data-reveal>
+          {emotions.map((emotion) => (
+            <article key={emotion.no}>
+              <span>{emotion.no}</span>
+              <b>{emotion.title[lang]}</b>
+              <p>{emotion.body[lang]}</p>
+            </article>
+          ))}
         </div>
         <div className="problem-head" data-reveal><p>{t.problemLabel}</p><h3>{t.problemTitle.split("\n").map((line) => <span key={line}>{line}</span>)}</h3></div>
         <div className="problem-list">
