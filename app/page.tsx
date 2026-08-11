@@ -256,9 +256,20 @@ function CaseVisual({ visual, lang, hint, title }: { visual: (typeof cases)[numb
   if (visual === "film") {
     return (
       <div className="film-visual" aria-label={title}>
-        <img src="/assets/hero-product.jpg" alt="포케덴 제품 광고 비주얼" />
+        <video
+          src="/assets/pokeden-ad.mp4"
+          poster="/assets/hero-product.jpg"
+          autoPlay
+          muted
+          loop
+          playsInline
+          controls
+          preload="metadata"
+          aria-label={lang === "ko" ? "포케덴 제품 광고 영상" : "ポケデン製品広告動画"}
+        >
+          {lang === "ko" ? "포케덴 광고 영상" : "ポケデン広告動画"}
+        </video>
         <div className="film-frame"><span>REC</span><b>POKEDEN / SCENE 05</b><i>00:24:12</i></div>
-        <button className="play-orb" aria-label={lang === "ko" ? "광고 영상 콘셉트" : "広告動画コンセプト"}>▶</button>
       </div>
     );
   }
