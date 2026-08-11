@@ -573,9 +573,10 @@ img {
 
 .profile-intro > p {
   margin: 0;
-  color: rgba(7,22,51,.64);
-  font-size: clamp(1.04rem, 1.2vw, 1.15rem);
-  line-height: 1.88;
+  color: rgba(7,22,51,.86);
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.72;
   word-break: keep-all;
 }
 
@@ -1428,7 +1429,7 @@ img {
 }
 
 [data-lang="ja"] .profile-intro h2 {
-  font-size: clamp(2.65rem, 4.3vw, 4.65rem);
+  font-size: 52px;
 }
 
 [data-lang="ja"] .case-story h3 {
@@ -1558,7 +1559,7 @@ img {
   }
 
   [data-lang="ja"] .profile-intro h2 {
-    font-size: clamp(2.1rem, 9.5vw, 2.85rem);
+    font-size: 40px;
   }
 
   [data-lang="ja"] .case-story h3 {
