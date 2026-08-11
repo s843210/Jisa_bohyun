@@ -387,19 +387,47 @@ img {
   transform: scale(1.035);
 }
 
-.hero-association-logo {
+.hero-university-lockup {
   position: relative;
-  width: clamp(250px, 30vw, 360px);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: fit-content;
+  max-width: 100%;
   margin: 0 0 1.5rem;
-  padding: .55rem;
+  padding: .6rem 1.35rem .6rem .6rem;
   background: var(--white);
   border: 1px solid rgba(7,22,51,.16);
   box-shadow: 0 16px 36px rgba(0,0,0,.2);
 }
 
-.hero-association-logo img {
-  width: 100%;
-  height: auto;
+.hero-university-lockup img {
+  width: clamp(96px, 8vw, 126px);
+  aspect-ratio: 1;
+  object-fit: cover;
+  flex: 0 0 auto;
+}
+
+.hero-university-lockup > div {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+}
+
+.hero-university-lockup span,
+.hero-university-lockup small {
+  font-size: .6rem;
+  font-weight: 800;
+  letter-spacing: .12em;
+  color: var(--blue);
+}
+
+.hero-university-lockup strong {
+  margin: .28rem 0 .18rem;
+  font-size: clamp(1.12rem, 1.8vw, 1.55rem);
+  line-height: 1.1;
+  letter-spacing: -.04em;
+  white-space: nowrap;
 }
 
 .hero-product-inset {
@@ -1466,7 +1494,10 @@ img {
   .hero h1 { font-size: clamp(3.7rem, 19vw, 6.2rem); line-height: .9; }
   .hero-body { margin: 2rem 0; }
   .hero-media { min-height: 520px; margin-top: 3rem; border-radius: 48% 48% 6px 6px / 23% 23% 6px 6px; }
-  .hero-association-logo { width: min(100%, 320px); margin-bottom: 1.2rem; }
+  .hero-university-lockup { width: min(100%, 360px); margin-bottom: 1.2rem; padding-right: .8rem; }
+  .hero-university-lockup img { width: 88px; }
+  .hero-university-lockup span, .hero-university-lockup small { font-size: .52rem; }
+  .hero-university-lockup strong { font-size: 1.05rem; }
   .hero-caption { grid-row: 3; }
   .scroll-mark { display: none; }
   .section-pad { padding: 5rem 1.2rem; }
