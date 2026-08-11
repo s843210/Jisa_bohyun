@@ -64,7 +64,7 @@ const copy = {
     hoverHint: "장면에 마우스를 올려보세요",
     adminTitle: "POKEDEN / CONTENT CONTROL",
     packageLabel: "03 / BRAND IN PHYSICAL FORM",
-    packageTitle: "같은 제품,\n완전히 다른 두 시선.",
+    packageTitle: "성인용과 어린이용,\n두 패키지를 디자인했습니다.",
     packageBody:
       "일반 고객에게는 효능과 신뢰가 바로 읽히는 블루 패키지를, 어린이·보호자에게는 친근한 우주 세계관을 제안했습니다. ‘내가 좋아하는 디자인’이 아니라 ‘누가 보는 디자인인가’를 기준으로 나눴습니다.",
     kids: "KIDS / FAMILY",
@@ -164,7 +164,7 @@ const copy = {
     hoverHint: "シーンにカーソルを合わせてください",
     adminTitle: "POKEDEN / CONTENT CONTROL",
     packageLabel: "03 / BRAND IN PHYSICAL FORM",
-    packageTitle: "同じ製品、\nまったく違う二つの視点。",
+    packageTitle: "大人向けと子ども向け、\n二つのパッケージをデザインしました。",
     packageBody:
       "一般のお客様には効能と信頼がすぐ伝わるブルーのパッケージを、子どもと保護者には親しみやすい宇宙の世界観を提案。「自分が好きか」ではなく「誰が見るか」を基準に分けました。",
     kids: "KIDS / FAMILY",
