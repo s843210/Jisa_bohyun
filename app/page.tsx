@@ -344,8 +344,8 @@ function CaseVisual({ visual, lang, hint, title }: { visual: (typeof cases)[numb
     return (
       <div className="film-visual" aria-label={title}>
         <video
-          src="/assets/pokeden-ad-web.mp4"
-          poster="/assets/hero-product.jpg"
+          src="assets/pokeden-ad-web.mp4"
+          poster="assets/hero-product.jpg"
           autoPlay
           muted
           loop
@@ -366,10 +366,10 @@ function CaseVisual({ visual, lang, hint, title }: { visual: (typeof cases)[numb
       <div className="browser-visual" aria-label={title}>
         <div className="browser-bar"><i /><i /><i /><span>usmedical.jp / pokeden</span></div>
         <div className="web-capture">
-          <img className="web-capture-bg" src="/assets/web-integration.jpg" alt="" aria-hidden="true" />
+          <img className="web-capture-bg" src="assets/web-integration.jpg" alt="" aria-hidden="true" />
           <img
             className="web-capture-main"
-            src="/assets/web-integration.jpg"
+            src="assets/web-integration.jpg"
             alt={lang === "ko" ? "포케덴 웹사이트 메인 화면" : "ポケデンのウェブサイトメイン画面"}
           />
         </div>
@@ -380,10 +380,10 @@ function CaseVisual({ visual, lang, hint, title }: { visual: (typeof cases)[numb
   if (visual === "hover") {
     return (
       <div className="hover-capture" aria-label={title}>
-        <img className="hover-capture-bg" src="/assets/hover-site.jpg" alt="" aria-hidden="true" />
+        <img className="hover-capture-bg" src="assets/hover-site.jpg" alt="" aria-hidden="true" />
         <img
           className="hover-capture-main"
-          src="/assets/hover-site.jpg"
+          src="assets/hover-site.jpg"
           alt={lang === "ko" ? "포케덴 호버 재생 웹사이트 화면" : "ポケデンのホバー再生ウェブサイト画面"}
         />
         <div className="hover-capture-note"><i />{hint}<b>HOVER EXPERIENCE / 08 SCENES</b></div>
@@ -407,8 +407,8 @@ function CaseVisual({ visual, lang, hint, title }: { visual: (typeof cases)[numb
 
   return (
     <div className="package-visual" aria-label={title}>
-      <div><img src="/assets/adult-package.jpg" alt={lang === "ko" ? "성인용 포케덴 패키지" : "大人向けポケデンパッケージ"} /><span>ADULT / ORAL CARE</span></div>
-      <div><img src="/assets/kids-package-final.jpg" alt={lang === "ko" ? "어린이용 포케덴 패키지" : "子ども向けポケデンパッケージ"} /><span>KIDS / FAMILY</span></div>
+      <div><img src="assets/adult-package.jpg" alt={lang === "ko" ? "성인용 포케덴 패키지" : "大人向けポケデンパッケージ"} /><span>ADULT / ORAL CARE</span></div>
+      <div><img src="assets/kids-package-final.jpg" alt={lang === "ko" ? "어린이용 포케덴 패키지" : "子ども向けポケデンパッケージ"} /><span>KIDS / FAMILY</span></div>
     </div>
   );
 }
@@ -476,7 +476,7 @@ export default function Home() {
         <div className="hero-copy" data-reveal>
           <p className="eyebrow"><span />{t.heroKicker}</p>
           <div className="hero-association-logo">
-            <img src="/assets/jisa-logo.png" alt={lang === "ko" ? "JISA 일본 인턴십 지원 협회 로고" : "JISA Japan Internship Support Association ロゴ"} />
+            <img src="assets/jisa-logo.png" alt={lang === "ko" ? "JISA 일본 인턴십 지원 협회 로고" : "JISA Japan Internship Support Association ロゴ"} />
           </div>
           <div className="hero-person">
             <span>{t.profileRoman}</span>
@@ -489,9 +489,9 @@ export default function Home() {
         </div>
         <div className="hero-media" data-reveal>
           <div className="hero-media-tag">FIELD INTERN<br /><b>IM BOHYUN</b></div>
-          <img className="hero-portrait" src="/assets/working.jpg" alt={lang === "ko" ? "US Medical 사무실에서 작업 중인 임보현" : "US Medicalのオフィスで作業するイム・ボヒョン"} />
+          <img className="hero-portrait" src="assets/working.jpg" alt={lang === "ko" ? "US Medical 사무실에서 작업 중인 임보현" : "US Medicalのオフィスで作業するイム・ボヒョン"} />
           <div className="hero-product-inset">
-            <img src="/assets/hero-product.jpg" alt={lang === "ko" ? "담당 제품 포케덴" : "担当製品ポケデン"} />
+            <img src="assets/hero-product.jpg" alt={lang === "ko" ? "담당 제품 포케덴" : "担当製品ポケデン"} />
             <span>POKEDEN / PRODUCT</span>
           </div>
           <div className="hero-scan" />
@@ -597,15 +597,15 @@ export default function Home() {
         </div>
         <div className="package-gallery">
           <article className="adult-card" data-reveal>
-            <div className="image-wrap"><img src="/assets/adult-package.jpg" alt={lang === "ko" ? "성인용 포케덴 패키지" : "大人向けポケデンパッケージ"} /></div>
+            <div className="image-wrap"><img src="assets/adult-package.jpg" alt={lang === "ko" ? "성인용 포케덴 패키지" : "大人向けポケデンパッケージ"} /></div>
             <div><p>{t.premium}</p><span>{t.premiumDesc}</span></div>
           </article>
           <article className="kids-card" data-reveal>
-            <div className="image-wrap"><img src="/assets/kids-package-final.jpg" alt={lang === "ko" ? "어린이용 포케덴 패키지" : "子ども向けポケデンパッケージ"} /></div>
+            <div className="image-wrap"><img src="assets/kids-package-final.jpg" alt={lang === "ko" ? "어린이용 포케덴 패키지" : "子ども向けポケデンパッケージ"} /></div>
             <div><p>{t.kids}</p><span>{t.kidsDesc}</span></div>
           </article>
           <article className="dieline-card" data-reveal>
-            <img src="/assets/dieline.jpg" alt="포케덴 패키지 인쇄 전개도" />
+            <img src="assets/dieline.jpg" alt="포케덴 패키지 인쇄 전개도" />
             <div><p>{t.printReady}</p><h3>{t.printTitle}</h3><span>{t.printBody}</span></div>
           </article>
         </div>
@@ -651,8 +651,8 @@ export default function Home() {
             </div>
           </div>
           <div className="reflection-photos" data-reveal>
-            <figure className="team-photo"><img src="/assets/team.jpg" alt="US Medical 대표와 실습팀 기념 사진" /><figcaption>US MEDICAL INC. / TOKYO / 2026</figcaption></figure>
-            <figure className="work-photo"><img src="/assets/working.jpg" alt="US Medical 오피스에서 작업 중인 임보현" /><figcaption>FIELD NOTE 02 / WORK IN PROGRESS</figcaption></figure>
+            <figure className="team-photo"><img src="assets/team.jpg" alt="US Medical 대표와 실습팀 기념 사진" /><figcaption>US MEDICAL INC. / TOKYO / 2026</figcaption></figure>
+            <figure className="work-photo"><img src="assets/working.jpg" alt="US Medical 오피스에서 작업 중인 임보현" /><figcaption>FIELD NOTE 02 / WORK IN PROGRESS</figcaption></figure>
           </div>
         </div>
         <div className="learning-grid">

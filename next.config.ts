@@ -1,7 +1,17 @@
 import type { NextConfig } from "next";
 
+const isGitHubPages = process.env.GITHUB_ACTIONS === "true";
+const repositoryName = process.env.GITHUB_REPOSITORY?.split("/")[1];
+const basePath = isGitHubPages && repositoryName ? `/${repositoryName}` : "";
+
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: isGitHubPages ? "export" : undefined,
+  basePath,
+  assetPrefix: basePath || undefined,
+  trailingSlash: isGitHubPages,
+  typescript: {
+    tsconfigPath: isGitHubPages ? "tsconfig.pages.json" : undefined,
+  },
 };
 
 export default nextConfig;

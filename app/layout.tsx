@@ -2,6 +2,12 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
+const repositoryName = process.env.GITHUB_REPOSITORY?.split("/")[1];
+const publicBasePath =
+  process.env.GITHUB_ACTIONS === "true" && repositoryName
+    ? `/${repositoryName}`
+    : "";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -27,8 +33,8 @@ export const metadata: Metadata = {
     "일본 기업 현장실습",
   ],
   icons: {
-    icon: "/favicon.png",
-    shortcut: "/favicon.png",
+    icon: `${publicBasePath}/favicon.png`,
+    shortcut: `${publicBasePath}/favicon.png`,
   },
 };
 
