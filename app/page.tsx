@@ -250,9 +250,6 @@ const problems = [
 ];
 
 function CaseVisual({ visual, lang, hint, title }: { visual: (typeof cases)[number]["visual"]; lang: Lang; hint: string; title: string }) {
-  const [scene, setScene] = useState(0);
-  const sceneNames = lang === "ko" ? ["의료", "재난", "훈련", "키즈", "아웃도어"] : ["医療", "災害", "訓練", "キッズ", "アウトドア"];
-
   if (visual === "film") {
     return (
       <div className="film-visual" aria-label={title}>
@@ -289,20 +286,14 @@ function CaseVisual({ visual, lang, hint, title }: { visual: (typeof cases)[numb
 
   if (visual === "hover") {
     return (
-      <div className={`hover-visual scene-${scene}`} aria-label={title}>
-        <div className="hover-topline"><span><i /> {hint}</span><b>0{scene + 1} / 05</b></div>
-        <div className="scene-stage">
-          <img src={scene === 3 ? "/assets/mascot.png" : "/assets/hero-product.jpg"} alt="" />
-          <strong>{sceneNames[scene]}</strong>
-          <span>{scene === 3 ? "FAMILY CARE" : "POKEDEN IN MOTION"}</span>
-        </div>
-        <div className="scene-tabs">
-          {sceneNames.map((name, index) => (
-            <button key={name} className={scene === index ? "active" : ""} onMouseEnter={() => setScene(index)} onFocus={() => setScene(index)} onClick={() => setScene(index)}>
-              <span>0{index + 1}</span>{name}
-            </button>
-          ))}
-        </div>
+      <div className="hover-capture" aria-label={title}>
+        <img className="hover-capture-bg" src="/assets/hover-site.jpg" alt="" aria-hidden="true" />
+        <img
+          className="hover-capture-main"
+          src="/assets/hover-site.jpg"
+          alt={lang === "ko" ? "포케덴 호버 재생 웹사이트 화면" : "ポケデンのホバー再生ウェブサイト画面"}
+        />
+        <div className="hover-capture-note"><i />{hint}<b>HOVER EXPERIENCE / 08 SCENES</b></div>
       </div>
     );
   }
