@@ -13,11 +13,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "임보현 — Make · Move · Manage",
+  title: "임보현 — 조선대학교 컴퓨터공학과 × US Medical",
   description:
-    "US Medical Inc. 일본 기업 현장실습에서 AI 광고 영상, 웹 인터랙션, 운영 대시보드, 패키지 디자인을 연결한 임보현의 포트폴리오.",
+    "조선대학교 컴퓨터공학과 임보현이 US Medical Inc. 일본 기업 현장실습에서 AI 광고 영상, 웹 인터랙션, 운영 대시보드, 패키지 디자인을 연결한 두 달간의 포트폴리오.",
   keywords: [
     "임보현",
+    "조선대학교",
+    "컴퓨터공학과",
     "US Medical",
     "POKEDEN",
     "포케덴",

@@ -8,24 +8,39 @@ type Localized = Record<Lang, string>;
 const copy = {
   ko: {
     skip: "본문으로 건너뛰기",
-    role: "US Medical Inc. × POKEDEN · 일본 기업 현장실습",
+    role: "임보현 · 조선대학교 컴퓨터공학과",
+    navProfile: "나는 누구인가",
     navWork: "무엇을 했나",
     navSystem: "어떻게 연결했나",
     navOutcome: "무엇을 남겼나",
-    navReflection: "무엇이 달라졌나",
+    navReflection: "일본에서의 두 달",
     heroKicker: "JAPAN FIELDWORK / 2026.07—08",
+    profileName: "임보현",
+    profileRoman: "LIM BOHYUN / イム・ボヒョン",
+    profileSchool: "조선대학교 컴퓨터공학과",
     heroLine1: "만들고,",
     heroLine2: "움직이고,",
     heroLine3: "남겨지게.",
     heroBody:
-      "포케덴의 AI 광고 영상에서 시작해 웹 인터랙션, 운영 대시보드, 실제 인쇄 가능한 패키지까지. 결과물이 혼자서 계속 일하게 만드는 과정을 설계했습니다.",
+      "조선대학교 컴퓨터공학과 임보현입니다. 일본 US Medical에서 두 달 동안 포케덴의 AI 광고 영상, 웹 인터랙션, 운영 화면, 실제 패키지까지 직접 만들고 연결했습니다.",
     explore: "프로젝트 보기",
     scroll: "SCROLL TO CONNECT",
-    heroNote: "일본 최초 양치 타블렛 ‘포케덴’을 위해 만든 하나의 연결된 시스템",
+    heroNote: "US MEDICAL INC. / TOKYO · 기업 현장실습생 임보현의 두 달간 작업 기록",
     month: "개월",
     works: "성과물",
     scenes: "영상 테마",
     languages: "운영 언어",
+    profileLabel: "00 / PROFILE & ROLE",
+    profileTitle: "컴퓨터공학을 전공하고,\n현장에서 끝까지 연결했습니다.",
+    profileBody:
+      "개발만 하거나 디자인만 하는 역할이 아니었습니다. 제품을 보여주는 영상부터 사용자가 경험하는 웹, 담당자가 이어서 쓰는 운영 화면, 손에 잡히는 패키지까지 결과물의 전체 흐름을 맡았습니다.",
+    placeLabel: "FIELD",
+    placeValue: "US Medical Inc. · Tokyo",
+    periodLabel: "PERIOD",
+    periodValue: "2026.07—08 · 2개월",
+    majorLabel: "MAJOR",
+    majorValue: "조선대학교 컴퓨터공학과",
+    roleLabel: "MY ROLE / 05 RESPONSIBILITIES",
     thesisLabel: "THE THESIS",
     thesisTitle: "좋은 결과물은 완성되는 것이 아니라,\n계속 사용될 때 비로소 작동한다.",
     thesisBody:
@@ -71,18 +86,24 @@ const copy = {
     targets: "타깃 패키지 라인",
     problemLabel: "THREE PROBLEMS I KEPT",
     problemTitle: "문제는 사라졌고,\n판단 기준은 남았습니다.",
-    reflectionLabel: "05 / THE OTHER BUILD",
+    reflectionLabel: "05 / TWO MONTHS IN JAPAN",
     reflectionTitle: "기술보다 먼저\n태도가 바뀌었다.",
     reflectionQuote: "‘실수하면 안 된다’에서\n‘모르면 묻고, 틀리면 고치면 된다’로.",
     reflectionBody:
-      "서툰 일본어로 회의하고, 피드백을 오해해 엉뚱한 곳을 고치기도 했습니다. 그러나 다시 묻는 용기와 매주 수정하는 습관을 얻었습니다. 일본에서의 두 달은 포트폴리오를 채운 시간이 아니라, 일하는 방식을 바꾼 시간이었습니다.",
+      "첫 주에는 회의 내용의 절반도 이해하지 못해 고개만 끄덕였습니다. 피드백을 잘못 알아듣고 엉뚱한 부분을 고친 적도 있었지만, 모르면 그 자리에서 다시 묻고 들은 표현을 다음 회의에서 직접 쓰며 버텼습니다. 일본에서의 두 달은 결과물보다 일하는 태도를 더 크게 바꾼 시간이었습니다.",
+    lifeNote: "LIFE OUTSIDE THE OFFICE",
+    lifeTitle: "회사 밖에서도 매일이 작은 과제였습니다.",
+    lifeBody:
+      "쓰레기 배출 요일을 익히고, 낯선 전철을 갈아타고, 혼자 장을 보고 생활비를 관리했습니다. 시간과 질서를 지키며 서로에게 폐를 끼치지 않으려는 문화를 경험했고, 어디에 놓여도 스스로 살아갈 수 있다는 작은 자신감을 얻었습니다.",
     language: "언어",
     languageBody: "모르는 표현을 메모하고 다음 회의에서 직접 사용하며, 일본어를 신뢰를 만드는 업무 도구로 익혔습니다.",
     feedbackTitle: "피드백",
     feedbackBody: "지적 → 수정 → 재검토를 반복하며 피드백을 부정이 아닌 ‘혼자서는 못 보는 시선’으로 받아들였습니다.",
     ownership: "오너십",
     ownershipBody: "내가 만족하는가보다 받는 사람이 계속 편하게 쓸 수 있는가를 먼저 생각하게 되었습니다.",
-    closingSmall: "LIM BOHYUN × US MEDICAL INC.",
+    independence: "생활",
+    independenceBody: "통학·장보기·생활비 관리까지 혼자 해내며 낯선 환경에서도 움직일 수 있다는 자신감을 얻었습니다.",
+    closingSmall: "LIM BOHYUN · CHOSUN UNIVERSITY CSE × US MEDICAL INC.",
     closingTitle: "보여주는 기술과\n운용하는 기술을 잇다.",
     closingBody: "AI 광고 영상 · 웹 개발 · 운영 대시보드 · 패키지 디자인",
     top: "처음으로",
@@ -90,24 +111,39 @@ const copy = {
   },
   ja: {
     skip: "本文へ移動",
-    role: "US Medical Inc. × POKEDEN · 日本企業現場実習",
+    role: "イム・ボヒョン · 朝鮮大学校 コンピュータ工学科",
+    navProfile: "プロフィール",
     navWork: "担当したこと",
     navSystem: "どうつないだか",
     navOutcome: "何を残したか",
-    navReflection: "何が変わったか",
+    navReflection: "日本での2か月",
     heroKicker: "JAPAN FIELDWORK / 2026.07—08",
+    profileName: "イム・ボヒョン",
+    profileRoman: "LIM BOHYUN / 임보현",
+    profileSchool: "朝鮮大学校 コンピュータ工学科",
     heroLine1: "つくって、",
     heroLine2: "動かして、",
     heroLine3: "残る仕組みに。",
     heroBody:
-      "ポケデンのAI広告動画から、Webインタラクション、運用ダッシュボード、印刷可能なパッケージまで。成果物が自走し続ける流れを設計しました。",
+      "朝鮮大学校コンピュータ工学科のイム・ボヒョンです。日本のUS Medicalで2か月間、ポケデンのAI広告動画、Webインタラクション、運用画面、実際のパッケージまで制作し、つなげました。",
     explore: "プロジェクトを見る",
     scroll: "SCROLL TO CONNECT",
-    heroNote: "日本初の歯みがきタブレット「ポケデン」のためにつくった、一つのつながるシステム",
+    heroNote: "US MEDICAL INC. / TOKYO · 企業現場実習生イム・ボヒョンの2か月の記録",
     month: "か月",
     works: "成果物",
     scenes: "動画テーマ",
     languages: "運用言語",
+    profileLabel: "00 / PROFILE & ROLE",
+    profileTitle: "コンピュータ工学を学び、\n現場で最後までつなげました。",
+    profileBody:
+      "開発だけ、デザインだけの役割ではありません。製品を見せる動画から、ユーザーが体験するWeb、担当者が運用を続ける管理画面、手に取るパッケージまで、成果物の流れ全体を担当しました。",
+    placeLabel: "FIELD",
+    placeValue: "US Medical Inc. · Tokyo",
+    periodLabel: "PERIOD",
+    periodValue: "2026.07—08 · 2か月",
+    majorLabel: "MAJOR",
+    majorValue: "朝鮮大学校 コンピュータ工学科",
+    roleLabel: "MY ROLE / 05 RESPONSIBILITIES",
     thesisLabel: "THE THESIS",
     thesisTitle: "良い成果物は、完成した時ではなく、\n使われ続けて初めて機能する。",
     thesisBody:
@@ -153,18 +189,24 @@ const copy = {
     targets: "ターゲット別ライン",
     problemLabel: "THREE PROBLEMS I KEPT",
     problemTitle: "問題は消え、\n判断基準が残った。",
-    reflectionLabel: "05 / THE OTHER BUILD",
+    reflectionLabel: "05 / TWO MONTHS IN JAPAN",
     reflectionTitle: "技術より先に、\n姿勢が変わった。",
     reflectionQuote: "「失敗してはいけない」から\n「分からなければ聞き、間違えれば直す」へ。",
     reflectionBody:
-      "拙い日本語で会議をし、フィードバックを誤解して見当違いの箇所を直したこともありました。それでも、聞き返す勇気と毎週改善する習慣を得ました。日本での二か月は、作品を増やした時間ではなく、働き方を変えた時間でした。",
+      "最初の週は会議の半分も理解できず、うなずくだけでした。フィードバックを誤解して見当違いの箇所を直したこともありましたが、分からなければその場で聞き直し、覚えた表現を次の会議で使いながら乗り越えました。日本での2か月は、成果物以上に働く姿勢を変えた時間でした。",
+    lifeNote: "LIFE OUTSIDE THE OFFICE",
+    lifeTitle: "会社の外でも、毎日が小さな課題でした。",
+    lifeBody:
+      "ごみ出しの曜日を覚え、慣れない電車を乗り換え、一人で買い物と生活費の管理をしました。時間と秩序を守り、他人に迷惑をかけない文化に触れ、どこに置かれても自分で生活できるという小さな自信を得ました。",
     language: "言葉",
     languageBody: "知らない表現をメモし、次の会議で自分から使うことで、日本語を信頼を築く仕事の道具として学びました。",
     feedbackTitle: "フィードバック",
     feedbackBody: "指摘 → 修正 → 再確認を重ね、フィードバックを否定ではなく「一人では見えない視点」と捉えました。",
     ownership: "オーナーシップ",
     ownershipBody: "自分が満足するかより、受け取る人が使い続けやすいかを先に考えるようになりました。",
-    closingSmall: "LIM BOHYUN × US MEDICAL INC.",
+    independence: "生活",
+    independenceBody: "通勤・買い物・生活費の管理まで自分で行い、慣れない環境でも動ける自信を得ました。",
+    closingSmall: "LIM BOHYUN · CHOSUN UNIVERSITY CSE × US MEDICAL INC.",
     closingTitle: "「見せる」技術と\n「運用する」技術をつなぐ。",
     closingBody: "AI広告動画 · Web開発 · 運用ダッシュボード · パッケージデザイン",
     top: "トップへ",
@@ -249,6 +291,44 @@ const problems = [
   },
 ];
 
+const responsibilities: Array<{
+  no: string;
+  title: Localized;
+  body: Localized;
+  tool: string;
+}> = [
+  {
+    no: "01",
+    title: { ko: "AI 광고 영상 기획·제작", ja: "AI広告動画の企画・制作" },
+    body: { ko: "의료·재난·훈련·어린이·야외 장면을 구성하고 자막과 편집 속도를 반복 개선했습니다.", ja: "医療・災害・訓練・子ども・屋外のシーンを構成し、字幕と編集速度を反復改善しました。" },
+    tool: "AI FILM / EDIT",
+  },
+  {
+    no: "02",
+    title: { ko: "기업 홈페이지 영상 통합", ja: "企業サイトへの動画統合" },
+    body: { ko: "영상 배치와 자동 재생, 음소거, 지연 로딩, PC·모바일 반응형 표시를 조정했습니다.", ja: "動画配置、自動再生、ミュート、遅延読み込み、PC・モバイルのレスポンシブ表示を調整しました。" },
+    tool: "REACT / WEB",
+  },
+  {
+    no: "03",
+    title: { ko: "호버 재생 인터랙션", ja: "ホバー再生インタラクション" },
+    body: { ko: "사진에 마우스를 올리면 영상이 재생되고, 평소에는 장면이 자동 순환하는 기능을 구현했습니다.", ja: "画像にカーソルを合わせると動画が再生され、通常時はシーンが自動循環する機能を実装しました。" },
+    tool: "INTERACTION / UI",
+  },
+  {
+    no: "04",
+    title: { ko: "관리자 화면·대시보드", ja: "管理画面・ダッシュボード" },
+    body: { ko: "담당자가 영상·이미지·문구·공지·문의를 직접 관리하도록 정보 구조와 화면을 정리했습니다.", ja: "担当者が動画・画像・文言・お知らせ・問い合わせを直接管理できるよう、情報構造と画面を整えました。" },
+    tool: "ADMIN / OPS",
+  },
+  {
+    no: "05",
+    title: { ko: "타깃별 제품 패키지", ja: "ターゲット別製品パッケージ" },
+    body: { ko: "성인용과 어린이용 표현을 나누고 치수·효능·사용법·주의사항까지 인쇄 데이터로 연결했습니다.", ja: "大人向けと子ども向けの表現を分け、寸法・効能・用法・注意事項まで印刷データにつなげました。" },
+    tool: "PACKAGE / PRINT",
+  },
+];
+
 function CaseVisual({ visual, lang, hint, title }: { visual: (typeof cases)[number]["visual"]; lang: Lang; hint: string; title: string }) {
   if (visual === "film") {
     return (
@@ -330,9 +410,9 @@ export default function Home() {
   const t = copy[lang];
   const currentCase = cases[activeCase];
   const navItems = useMemo(() => [
+    ["#profile", t.navProfile],
     ["#work", t.navWork],
     ["#system", t.navSystem],
-    ["#outcome", t.navOutcome],
     ["#reflection", t.navReflection],
   ], [t]);
 
@@ -385,13 +465,22 @@ export default function Home() {
         <div className="hero-grid" />
         <div className="hero-copy" data-reveal>
           <p className="eyebrow"><span />{t.heroKicker}</p>
+          <div className="hero-person">
+            <span>{t.profileRoman}</span>
+            <strong>{t.profileName}</strong>
+            <small>{t.profileSchool}</small>
+          </div>
           <h1><span>{t.heroLine1}</span><span>{t.heroLine2}</span><em>{t.heroLine3}</em></h1>
           <p className="hero-body">{t.heroBody}</p>
           <a className="primary-link" href="#work"><span>{t.explore}</span><i>↘</i></a>
         </div>
         <div className="hero-media" data-reveal>
-          <div className="hero-media-tag">POKEDEN<br /><b>ORAL CARE</b></div>
-          <img src="/assets/hero-product.jpg" alt="포케덴 양치 타블렛 제품" />
+          <div className="hero-media-tag">FIELD INTERN<br /><b>IM BOHYUN</b></div>
+          <img className="hero-portrait" src="/assets/working.jpg" alt={lang === "ko" ? "US Medical 사무실에서 작업 중인 임보현" : "US Medicalのオフィスで作業するイム・ボヒョン"} />
+          <div className="hero-product-inset">
+            <img src="/assets/hero-product.jpg" alt={lang === "ko" ? "담당 제품 포케덴" : "担当製品ポケデン"} />
+            <span>POKEDEN / PRODUCT</span>
+          </div>
           <div className="hero-scan" />
           <div className="hero-coordinates"><span>35.6762° N</span><span>139.6503° E</span></div>
           <div className="floating-orbit"><span>AI FILM</span><span>WEB</span><span>OPS</span><span>PACK</span></div>
@@ -405,6 +494,34 @@ export default function Home() {
         <div><b>08</b><span>{t.works}</span></div>
         <div><b>05</b><span>{t.scenes}</span></div>
         <div><b>03</b><span>{t.languages}</span></div>
+      </section>
+
+      <section className="profile-section section-pad" id="profile">
+        <div className="profile-intro" data-reveal>
+          <div>
+            <p className="section-label">{t.profileLabel}</p>
+            <h2>{t.profileTitle.split("\n").map((line) => <span key={line}>{line}</span>)}</h2>
+          </div>
+          <p>{t.profileBody}</p>
+        </div>
+        <div className="profile-facts" data-reveal>
+          {[
+            [t.placeLabel, t.placeValue],
+            [t.periodLabel, t.periodValue],
+            [t.majorLabel, t.majorValue],
+          ].map(([label, value]) => <div key={label}><span>{label}</span><b>{value}</b></div>)}
+        </div>
+        <div className="responsibility-head" data-reveal><span>{t.roleLabel}</span><i>↓</i></div>
+        <div className="responsibility-list">
+          {responsibilities.map((item) => (
+            <article key={item.no} data-reveal>
+              <span>{item.no}</span>
+              <h3>{item.title[lang]}</h3>
+              <p>{item.body[lang]}</p>
+              <b>{item.tool}</b>
+            </article>
+          ))}
+        </div>
       </section>
 
       <section className="thesis section-pad">
@@ -519,6 +636,11 @@ export default function Home() {
             <h2>{t.reflectionTitle.split("\n").map((line) => <span key={line}>{line}</span>)}</h2>
             <blockquote>{t.reflectionQuote.split("\n").map((line) => <span key={line}>{line}</span>)}</blockquote>
             <p>{t.reflectionBody}</p>
+            <div className="japan-life-note">
+              <span>{t.lifeNote}</span>
+              <h3>{t.lifeTitle}</h3>
+              <p>{t.lifeBody}</p>
+            </div>
           </div>
           <div className="reflection-photos" data-reveal>
             <figure className="team-photo"><img src="/assets/team.jpg" alt="US Medical 대표와 실습팀 기념 사진" /><figcaption>US MEDICAL INC. / TOKYO / 2026</figcaption></figure>
@@ -529,7 +651,8 @@ export default function Home() {
           {[
             ["01", t.language, t.languageBody],
             ["02", t.feedbackTitle, t.feedbackBody],
-            ["03", t.ownership, t.ownershipBody],
+            ["03", t.independence, t.independenceBody],
+            ["04", t.ownership, t.ownershipBody],
           ].map(([no, title, body]) => <article key={no} data-reveal><span>{no}</span><h3>{title}</h3><p>{body}</p></article>)}
         </div>
       </section>
