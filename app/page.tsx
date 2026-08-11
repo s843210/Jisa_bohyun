@@ -275,10 +275,13 @@ function CaseVisual({ visual, lang, hint, title }: { visual: (typeof cases)[numb
     return (
       <div className="browser-visual" aria-label={title}>
         <div className="browser-bar"><i /><i /><i /><span>usmedical.jp / pokeden</span></div>
-        <div className="browser-body">
-          <div className="browser-copy"><small>ORAL CARE, REFRAMED.</small><strong>水のいらない<br />新感覚ケア</strong><span className="browser-button">Discover product →</span></div>
-          <img src="/assets/hero-product.jpg" alt="포케덴 웹 히어로 시안" />
-          <div className="loading-chip"><b>92</b><span>PERFORMANCE<br />MOBILE READY</span></div>
+        <div className="web-capture">
+          <img className="web-capture-bg" src="/assets/web-integration.jpg" alt="" aria-hidden="true" />
+          <img
+            className="web-capture-main"
+            src="/assets/web-integration.jpg"
+            alt={lang === "ko" ? "포케덴 웹사이트 메인 화면" : "ポケデンのウェブサイトメイン画面"}
+          />
         </div>
       </div>
     );
