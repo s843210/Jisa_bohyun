@@ -552,8 +552,8 @@ img {
 
 .profile-intro {
   display: grid;
-  grid-template-columns: minmax(0, 1.25fr) minmax(280px, .55fr);
-  gap: 7vw;
+  grid-template-columns: minmax(0, 1.08fr) minmax(320px, .72fr);
+  gap: 5vw;
   align-items: end;
 }
 
@@ -574,8 +574,8 @@ img {
 .profile-intro > p {
   margin: 0;
   color: rgba(7,22,51,.64);
-  font-size: .94rem;
-  line-height: 1.95;
+  font-size: clamp(1.04rem, 1.2vw, 1.15rem);
+  line-height: 1.88;
   word-break: keep-all;
 }
 
@@ -1428,7 +1428,7 @@ img {
 }
 
 [data-lang="ja"] .profile-intro h2 {
-  font-size: clamp(3rem, 5.3vw, 6rem);
+  font-size: clamp(2.65rem, 4.3vw, 4.65rem);
 }
 
 [data-lang="ja"] .case-story h3 {
@@ -1551,11 +1551,14 @@ img {
   }
 
   [data-lang="ja"] .thesis h2,
-  [data-lang="ja"] .profile-intro h2,
   [data-lang="ja"] .section-head h2,
   [data-lang="ja"] .package-intro h2,
   [data-lang="ja"] .outcome-intro h2 {
     font-size: clamp(2.45rem, 11vw, 3.5rem);
+  }
+
+  [data-lang="ja"] .profile-intro h2 {
+    font-size: clamp(2.1rem, 9.5vw, 2.85rem);
   }
 
   [data-lang="ja"] .case-story h3 {
