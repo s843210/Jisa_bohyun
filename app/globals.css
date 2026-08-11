@@ -31,6 +31,21 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+main {
+  width: 100%;
+  overflow-x: clip;
+}
+
+.hero > *,
+.thesis > *,
+.section-head > *,
+.case-panel > *,
+.package-intro > *,
+.outcome-intro > *,
+.reflection-grid > * {
+  min-width: 0;
+}
+
 body::selection {
   background: var(--electric);
   color: var(--ink);
@@ -1126,6 +1141,58 @@ img {
   transform: translateY(0);
 }
 
+/* Japanese text has no word spaces, so Korean keep-all rules create
+   oversized intrinsic widths. Give Japanese its own line-breaking rhythm. */
+[data-lang="ja"] .hero h1 {
+  font-size: clamp(3.8rem, 7vw, 7.6rem);
+  letter-spacing: -0.055em;
+  line-height: 0.9;
+}
+
+[data-lang="ja"] .hero h1 > span,
+[data-lang="ja"] .hero h1 > em {
+  white-space: nowrap;
+}
+
+[data-lang="ja"] .hero-body,
+[data-lang="ja"] .thesis h2,
+[data-lang="ja"] .thesis-content > p:last-child,
+[data-lang="ja"] .section-head h2,
+[data-lang="ja"] .section-head > p,
+[data-lang="ja"] .system-line h3,
+[data-lang="ja"] .system-line article > span,
+[data-lang="ja"] .case-story h3,
+[data-lang="ja"] .case-story dd,
+[data-lang="ja"] .package-intro h2,
+[data-lang="ja"] .package-intro > p:last-child,
+[data-lang="ja"] .outcome-intro h2,
+[data-lang="ja"] .outcome-intro > p:last-child,
+[data-lang="ja"] .problem-head h3,
+[data-lang="ja"] .problem-list h4,
+[data-lang="ja"] .problem-list p,
+[data-lang="ja"] .reflection-copy h2,
+[data-lang="ja"] .reflection-copy blockquote,
+[data-lang="ja"] .reflection-copy > p:last-child,
+[data-lang="ja"] .learning-grid p,
+[data-lang="ja"] .closing h2 {
+  overflow-wrap: anywhere;
+  word-break: normal;
+  line-break: strict;
+}
+
+[data-lang="ja"] .thesis h2 {
+  font-size: clamp(2.9rem, 5.3vw, 5.9rem);
+}
+
+[data-lang="ja"] .case-story h3 {
+  font-size: clamp(2.15rem, 3.35vw, 4.15rem);
+}
+
+[data-lang="ja"] .package-intro h2,
+[data-lang="ja"] .outcome-intro h2 {
+  font-size: clamp(3.2rem, 5.35vw, 6.1rem);
+}
+
 @media (max-width: 1100px) {
   .site-header { grid-template-columns: 1fr auto; }
   .site-header nav { display: none; }
@@ -1213,6 +1280,26 @@ img {
   .closing { min-height: 680px; padding-left: 1.2rem; padding-right: 1.2rem; }
   .closing h2 { font-size: clamp(3.5rem, 16vw, 5.5rem); }
   .closing > small { left: 1.2rem; right: 1.2rem; }
+
+  [data-lang="ja"] .hero h1 {
+    font-size: clamp(2.8rem, 12vw, 4.6rem);
+    line-height: 0.95;
+  }
+
+  [data-lang="ja"] .thesis h2,
+  [data-lang="ja"] .section-head h2,
+  [data-lang="ja"] .package-intro h2,
+  [data-lang="ja"] .outcome-intro h2 {
+    font-size: clamp(2.45rem, 11vw, 3.5rem);
+  }
+
+  [data-lang="ja"] .case-story h3 {
+    font-size: 2.35rem;
+  }
+
+  [data-lang="ja"] .closing h2 {
+    font-size: clamp(3rem, 13vw, 4.8rem);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

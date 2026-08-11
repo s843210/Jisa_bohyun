@@ -357,7 +357,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main id="top">
+    <main id="top" data-lang={lang}>
       <a className="skip-link" href="#content">{t.skip}</a>
       <div className="progress-rail" aria-hidden="true"><span style={{ transform: `scaleY(${scrollProgress})` }} /></div>
 
