@@ -28,7 +28,7 @@ const copy = {
     heroNote: "US MEDICAL INC. / TOKYO · 기업 현장실습생 임보현의 두 달간 작업 기록",
     languages: "운영 언어",
     profileLabel: "00 / PROFILE & ROLE",
-    profileTitle: "컴퓨터공학을 전공하고,\n현장에서 끝까지 연결했습니다.",
+    profileTitle: "일본 인턴십에서,\n맡은 일에 끝까지 최선을 다했습니다.",
     profileBody:
       "개발만 하거나 디자인만 하는 역할이 아니었습니다. 제품을 보여주는 영상부터 사용자가 경험하는 웹, 담당자가 이어서 쓰는 운영 화면, 손에 잡히는 패키지까지 결과물의 전체 흐름을 맡았습니다.",
     placeLabel: "FIELD",
@@ -128,7 +128,7 @@ const copy = {
     heroNote: "US MEDICAL INC. / TOKYO · 企業現場実習生イム・ボヒョンの2か月の記録",
     languages: "運用言語",
     profileLabel: "00 / PROFILE & ROLE",
-    profileTitle: "コンピュータ工学を学び、\n現場で最後までつなげました。",
+    profileTitle: "日本でのインターンシップで、\n任された仕事に最後まで全力で取り組みました。",
     profileBody:
       "開発だけ、デザインだけの役割ではありません。製品を見せる動画から、ユーザーが体験するWeb、担当者が運用を続ける管理画面、手に取るパッケージまで、成果物の流れ全体を担当しました。",
     placeLabel: "FIELD",
