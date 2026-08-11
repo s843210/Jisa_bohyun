@@ -54,11 +54,11 @@ const copy = {
     packageLabel: "03 / BRAND IN PHYSICAL FORM",
     packageTitle: "같은 제품,\n완전히 다른 두 시선.",
     packageBody:
-      "어린이·보호자에게는 친근한 우주 세계관을, 선물용 프리미엄 고객에게는 절제된 네이비와 여백을 제안했습니다. ‘내가 좋아하는 디자인’이 아니라 ‘누가 보는 디자인인가’를 기준으로 나눴습니다.",
+      "일반 고객에게는 효능과 신뢰가 바로 읽히는 블루 패키지를, 어린이·보호자에게는 친근한 우주 세계관을 제안했습니다. ‘내가 좋아하는 디자인’이 아니라 ‘누가 보는 디자인인가’를 기준으로 나눴습니다.",
     kids: "KIDS / FAMILY",
     kidsDesc: "캐릭터 · 3가지 과일 맛 · 개별 포장 · 3세 이상",
-    premium: "PREMIUM / GIFT",
-    premiumDesc: "네이비 · 고급 여백 · 기능을 절제한 정보 계층",
+    premium: "ADULT / ORAL CARE",
+    premiumDesc: "CPC 배합 · 충치·잇몸질환·구취 예방 · 민트향",
     printReady: "PRINT-READY",
     printTitle: "화면에서 상자까지",
     printBody: "95 × 65 × 30 mm 전개도에 효능, 사용법, 성분, 주의사항을 면별로 배치해 실제 인쇄 데이터로 연결했습니다.",
@@ -136,11 +136,11 @@ const copy = {
     packageLabel: "03 / BRAND IN PHYSICAL FORM",
     packageTitle: "同じ製品、\nまったく違う二つの視点。",
     packageBody:
-      "子どもと保護者には親しみやすい宇宙の世界観を、ギフト向けには抑制したネイビーと余白を提案。「自分が好きか」ではなく「誰が見るか」を基準に分けました。",
+      "一般のお客様には効能と信頼がすぐ伝わるブルーのパッケージを、子どもと保護者には親しみやすい宇宙の世界観を提案。「自分が好きか」ではなく「誰が見るか」を基準に分けました。",
     kids: "KIDS / FAMILY",
     kidsDesc: "キャラクター · 3種のフルーツ味 · 個包装 · 3歳以上",
-    premium: "PREMIUM / GIFT",
-    premiumDesc: "ネイビー · 上質な余白 · 機能を絞った情報設計",
+    premium: "ADULT / ORAL CARE",
+    premiumDesc: "CPC配合 · むし歯・歯周病・口臭予防 · ミント味",
     printReady: "PRINT-READY",
     printTitle: "画面から箱へ",
     printBody: "95 × 65 × 30 mmの展開図に効能、用法、成分、注意事項を面ごとに配置し、実際の印刷データにつなげました。",
@@ -317,8 +317,8 @@ function CaseVisual({ visual, lang, hint, title }: { visual: (typeof cases)[numb
 
   return (
     <div className="package-visual" aria-label={title}>
-      <div><img src="/assets/kids-package.jpg" alt="어린이용 포케덴 패키지" /><span>KIDS / FAMILY</span></div>
-      <div><img src="/assets/premium.jpg" alt="프리미엄 포케덴 패키지" /><span>PREMIUM / GIFT</span></div>
+      <div><img src="/assets/adult-package.jpg" alt={lang === "ko" ? "성인용 포케덴 패키지" : "大人向けポケデンパッケージ"} /><span>ADULT / ORAL CARE</span></div>
+      <div><img src="/assets/kids-package-final.jpg" alt={lang === "ko" ? "어린이용 포케덴 패키지" : "子ども向けポケデンパッケージ"} /><span>KIDS / FAMILY</span></div>
     </div>
   );
 }
@@ -473,13 +473,13 @@ export default function Home() {
           <p>{t.packageBody}</p>
         </div>
         <div className="package-gallery">
-          <article className="kids-card" data-reveal>
-            <div className="image-wrap"><img src="/assets/kids-package.jpg" alt="어린이용 포케덴 패키지" /><img className="mascot" src="/assets/mascot.png" alt="포케덴군 캐릭터" /></div>
-            <div><p>{t.kids}</p><span>{t.kidsDesc}</span></div>
-          </article>
-          <article className="premium-card" data-reveal>
-            <div className="image-wrap"><img src="/assets/premium.jpg" alt="프리미엄 포케덴 패키지" /></div>
+          <article className="adult-card" data-reveal>
+            <div className="image-wrap"><img src="/assets/adult-package.jpg" alt={lang === "ko" ? "성인용 포케덴 패키지" : "大人向けポケデンパッケージ"} /></div>
             <div><p>{t.premium}</p><span>{t.premiumDesc}</span></div>
+          </article>
+          <article className="kids-card" data-reveal>
+            <div className="image-wrap"><img src="/assets/kids-package-final.jpg" alt={lang === "ko" ? "어린이용 포케덴 패키지" : "子ども向けポケデンパッケージ"} /></div>
+            <div><p>{t.kids}</p><span>{t.kidsDesc}</span></div>
           </article>
           <article className="dieline-card" data-reveal>
             <img src="/assets/dieline.jpg" alt="포케덴 패키지 인쇄 전개도" />

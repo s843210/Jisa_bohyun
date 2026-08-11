@@ -981,7 +981,7 @@ img {
 
 .package-visual { display: grid; grid-template-columns: 1fr 1fr; background: #d9e7fa; }
 .package-visual > div { position: relative; overflow: hidden; border-right: 1px solid rgba(7,22,51,.18); }
-.package-visual img { width: 100%; height: 100%; object-fit: cover; }
+.package-visual img { width: 100%; height: 100%; padding: .75rem; object-fit: contain; background: #f7f7f8; }
 .package-visual span { position: absolute; left: 1rem; bottom: 1rem; padding: .45rem .6rem; background: var(--ink); color: var(--electric); font-family: var(--mono); font-size: .52rem; }
 
 .package-section {
@@ -1007,23 +1007,20 @@ img {
   gap: 1.5rem;
 }
 
+.adult-card,
 .kids-card,
-.premium-card,
 .dieline-card {
   margin: 0;
   border: 1px solid var(--ink);
 }
 
-.kids-card { grid-row: span 2; }
-.kids-card .image-wrap { position: relative; height: 680px; overflow: hidden; background: #dbeaff; }
-.kids-card .image-wrap > img:first-child { width: 100%; height: 100%; object-fit: cover; }
-.kids-card .mascot { position: absolute; width: 32%; right: -2%; bottom: 0; filter: drop-shadow(0 22px 32px rgba(7,22,51,.25)); transition: transform 350ms ease; }
-.kids-card:hover .mascot { transform: translate(-8px, -8px) rotate(-4deg); }
-.premium-card .image-wrap { height: 380px; background: var(--ink); }
-.premium-card img { width: 100%; height: 100%; object-fit: cover; }
-.kids-card > div:last-child, .premium-card > div:last-child { display: flex; justify-content: space-between; gap: 2rem; padding: 1.25rem; border-top: 1px solid var(--ink); }
-.kids-card p, .premium-card p { margin: 0; font-family: var(--mono); font-size: .64rem; font-weight: 700; }
-.kids-card span, .premium-card span { color: rgba(7,22,51,.55); font-size: .7rem; text-align: right; }
+.adult-card { grid-row: span 2; }
+.adult-card .image-wrap { height: 680px; background: #f2f1f3; }
+.kids-card .image-wrap { height: 380px; background: #fff; }
+.adult-card img, .kids-card img { width: 100%; height: 100%; padding: 1rem; object-fit: contain; }
+.adult-card > div:last-child, .kids-card > div:last-child { display: flex; justify-content: space-between; gap: 2rem; padding: 1.25rem; border-top: 1px solid var(--ink); }
+.adult-card p, .kids-card p { margin: 0; font-family: var(--mono); font-size: .64rem; font-weight: 700; }
+.adult-card span, .kids-card span { color: rgba(7,22,51,.55); font-size: .7rem; text-align: right; }
 
 .dieline-card {
   display: grid;
@@ -1271,9 +1268,9 @@ img {
   .package-intro, .outcome-intro { grid-template-columns: 1fr; gap: 2rem; margin-bottom: 3rem; }
   .package-intro h2, .outcome-intro h2 { font-size: 3.3rem; }
   .package-gallery { grid-template-columns: 1fr; }
-  .kids-card { grid-row: auto; }
-  .kids-card .image-wrap { height: 500px; }
-  .premium-card .image-wrap { height: 320px; }
+  .adult-card { grid-row: auto; }
+  .adult-card .image-wrap { height: 520px; }
+  .kids-card .image-wrap { height: 320px; }
   .dieline-card { grid-template-columns: 1fr; }
   .dieline-card > img { min-height: 320px; }
   .dieline-card > div { border-left: 0; border-top: 1px solid var(--ink); }
