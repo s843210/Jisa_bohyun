@@ -469,6 +469,9 @@ export default function Home() {
           <a className="primary-link" href="#work"><span>{t.explore}</span><i>↘</i></a>
         </div>
         <div className="hero-media" data-reveal>
+          <div className="hero-association-logo">
+            <img src="/assets/jisa-logo.png" alt={lang === "ko" ? "JISA 일본 인턴십 지원 협회 로고" : "JISA Japan Internship Support Association ロゴ"} />
+          </div>
           <div className="hero-media-tag">FIELD INTERN<br /><b>IM BOHYUN</b></div>
           <img className="hero-portrait" src="/assets/working.jpg" alt={lang === "ko" ? "US Medical 사무실에서 작업 중인 임보현" : "US Medicalのオフィスで作業するイム・ボヒョン"} />
           <div className="hero-product-inset">

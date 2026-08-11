@@ -388,6 +388,23 @@ img {
   transform: scale(1.035);
 }
 
+.hero-association-logo {
+  position: absolute;
+  z-index: 5;
+  top: 1.25rem;
+  right: 1.25rem;
+  width: min(52%, 300px);
+  padding: .55rem;
+  background: var(--white);
+  border: 1px solid rgba(7,22,51,.16);
+  box-shadow: 0 18px 42px rgba(7,22,51,.28);
+}
+
+.hero-association-logo img {
+  width: 100%;
+  height: auto;
+}
+
 .hero-product-inset {
   position: absolute;
   z-index: 4;
@@ -1448,6 +1465,7 @@ img {
   .hero h1 { font-size: clamp(3.7rem, 19vw, 6.2rem); line-height: .9; }
   .hero-body { margin: 2rem 0; }
   .hero-media { min-height: 520px; margin-top: 3rem; border-radius: 48% 48% 6px 6px / 23% 23% 6px 6px; }
+  .hero-association-logo { top: 1rem; right: 1rem; width: min(58%, 250px); }
   .hero-caption { grid-row: 3; }
   .scroll-mark { display: none; }
   .section-pad { padding: 5rem 1.2rem; }
