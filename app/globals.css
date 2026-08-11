@@ -554,7 +554,7 @@ img {
   display: grid;
   grid-template-columns: minmax(0, 1.08fr) minmax(320px, .72fr);
   gap: 5vw;
-  align-items: end;
+  align-items: start;
 }
 
 .profile-intro h2 {
@@ -572,7 +572,7 @@ img {
 }
 
 .profile-intro > p {
-  margin: 0;
+  margin: 2.9rem 0 0;
   color: rgba(7,22,51,.86);
   font-size: 25px;
   font-weight: 600;
@@ -1447,7 +1447,7 @@ img {
   .hero { grid-template-columns: 1fr .78fr; }
   .hero-media { min-height: 520px; }
   .profile-intro { grid-template-columns: 1fr; align-items: start; }
-  .profile-intro > p { max-width: 680px; }
+  .profile-intro > p { max-width: 680px; margin-top: 0; }
   .responsibility-list article { grid-template-columns: 55px minmax(180px,.8fr) minmax(250px,1.2fr); }
   .responsibility-list article > b { grid-column: 2; padding-bottom: 1rem; }
   .case-panel { grid-template-columns: 1fr; }
