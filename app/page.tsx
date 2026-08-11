@@ -19,8 +19,7 @@ const copy = {
     profileRoman: "LIM BOHYUN / イム・ボヒョン",
     profileSchool: "조선대학교 컴퓨터공학과",
     heroLine1: "BOHYUN",
-    heroLine2: "IN",
-    heroLine3: "JP",
+    heroLine2: "IN JP",
     heroBody:
       "조선대학교 컴퓨터공학과 임보현입니다. 일본 US Medical에서 두 달 동안 포케덴의 AI 광고 영상, 웹 인터랙션, 운영 화면, 실제 패키지까지 직접 만들고 연결했습니다.",
     explore: "프로젝트 보기",
@@ -114,8 +113,7 @@ const copy = {
     profileRoman: "LIM BOHYUN / 임보현",
     profileSchool: "朝鮮大学校 コンピュータ工学科",
     heroLine1: "BOHYUN",
-    heroLine2: "IN",
-    heroLine3: "JP",
+    heroLine2: "IN JP",
     heroBody:
       "朝鮮大学校コンピュータ工学科のイム・ボヒョンです。日本のUS Medicalで2か月間、ポケデンのAI広告動画、Webインタラクション、運用画面、実際のパッケージまで制作し、つなげました。",
     explore: "プロジェクトを見る",
@@ -485,7 +483,7 @@ export default function Home() {
             <strong>{t.profileName}</strong>
             <small>{t.profileSchool}</small>
           </div>
-          <h1><span>{t.heroLine1}</span><span>{t.heroLine2}</span><em>{t.heroLine3}</em></h1>
+          <h1><span>{t.heroLine1}</span><em>{t.heroLine2}</em></h1>
           <p className="hero-body">{t.heroBody}</p>
           <a className="primary-link" href="#work"><span>{t.explore}</span><i>↘</i></a>
         </div>
